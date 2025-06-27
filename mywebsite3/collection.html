@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collection - TsHiRt X</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #f1f1f1;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #ffcc00;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .collection-section {
+      padding: 60px 30px;
+    }
+
+    .collection-section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #ffcc00;
+    }
+
+    .product-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    .product-card p {
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    .buttons button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .buy:hover {
+      background-color: #218838;
+    }
+
+    .cart {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .cart:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 10px 10px 0 0;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TsHiRt X</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="collection-section">
+    <h2>Explore Our Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="image/img01.jpg" alt="Classic White Tee">
+        <h3>Classic White Tee</h3>
+        <p>₹499</p>
+        <div class="buttons">
+          <button class="buy">Buy Now</button>
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="image/img02.jpg" alt="Black Urban Fit">
+        <h3>Black Urban Fit</h3>
+        <p>₹599</p>
+        <div class="buttons">
+          <button class="buy">Buy Now</button>
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="image/img03.jpg" alt="Graphic Street Tee">
+        <h3>Graphic Street Tee</h3>
+        <p>₹649</p>
+        <div class="buttons">
+          <button class="buy">Buy Now</button>
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="image/img04.jpg" alt="Modern Red Tee">
+        <h3>Modern Red Tee</h3>
+        <p>₹599</p>
+        <div class="buttons">
+          <button class="buy">Buy Now</button>
+          <button class="cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
